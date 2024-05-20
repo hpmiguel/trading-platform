@@ -2,33 +2,5 @@ spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
 
-  ## Postgres
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/tradingdb
-    username: test
-    password: test
-  jpa:
-    hibernate:
-      ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
-    show-sql: true
-    database: postgresql
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    open-in-view: false
-    generate-ddl: true
-
-  ## H2
-  #jpa:
-  #  database-platform: org.hibernate.dialect.H2Dialect
-  #  hibernate:
-  #    ddl-auto: update
-  #    use-new-id-generator-mappings: false
-  #  generate-ddl: on
-  #liquibase:
-  #  url: jdbc:h2:file:./h2/app.db
-  #  user: sa
-  #  password: ''
-  #r2dbc:
-  #  url: r2dbc:h2:file:///./h2/app.db
-  #  username: sa
-  #  password: ''
+server:
+  port: 8080
