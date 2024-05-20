@@ -1,0 +1,5 @@
+Improvements
+- Securing endpoints, oauth (jwt, bearer)
+- Sensible data, like password, encrypted
+- Simple frontend (react, jquery)
+- Several trading algorithms
