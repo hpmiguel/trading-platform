@@ -3,3 +3,5 @@ Improvements
 - Sensible data, like password, encrypted
 - Simple frontend (react, jquery)
 - Several trading algorithms
+- Liquidbase versioning
+- CQRS (many reads)
