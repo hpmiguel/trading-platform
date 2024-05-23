@@ -22,6 +22,8 @@ public class OrderDtoMapper {
 
     public Order toDomainFromDto(OrderDto orderDto) {
         return Order.builder()
+                .userId(orderDto.getUserId())
+                .securityId(orderDto.getSecurityId())
                 .price(orderDto.getPrice())
                 .type(orderDto.getType())
                 .fulfilled(orderDto.getFulfilled())
