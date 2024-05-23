@@ -29,6 +29,13 @@ public class OrderController {
         return this.orderService.saveNew(order);
     }
 
+    @PutMapping("/{order_id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Order updateUser(@PathVariable("order_id") int orderId,
+                              @RequestBody @Valid OrderDto saveUserBodyDto) {
+        return this.orderService.updateOrder(orderId, saveUserBodyDto);
+    }
+
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public Collection<Order> fetchAllOrders() {

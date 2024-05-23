@@ -30,4 +30,17 @@ public class OrderDtoMapper {
                 .quantity(orderDto.getQuantity())
                 .build();
     }
+
+    public Order toDomainFromDto(Integer orderId, OrderDto orderDto) {
+        return Order.builder()
+                .id(orderId)
+                .userId(orderDto.getUserId())
+                .securityId(orderDto.getSecurityId())
+                .price(orderDto.getPrice())
+                .type(orderDto.getType())
+                .fulfilled(orderDto.getFulfilled())
+                .quantity(orderDto.getQuantity())
+                .build();
+    }
+
 }
