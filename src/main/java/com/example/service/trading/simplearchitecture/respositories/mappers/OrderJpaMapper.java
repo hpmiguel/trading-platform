@@ -28,8 +28,12 @@ public class OrderJpaMapper {
     }
 
     public OrderData toJpaEntity(Order order, OrderData persistedOrderData) {
+        UserData userData = UserData.builder().id(order.getUserId()).build();
+        SecurityData securityData = SecurityData.builder().id(order.getSecurityId()).build();
         return persistedOrderData.toBuilder()
                 .id(order.getId())
+                .user(userData)
+                .security(securityData)
                 .type(order.getType())
                 .fulfilled(order.getFulfilled())
                 .price(order.getPrice())

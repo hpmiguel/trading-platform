@@ -12,13 +12,13 @@ import java.io.Serializable;
 @Setter
 public class Trade implements Serializable {
 
-    private Integer tradeId;
+    private Integer id;
 
     private Integer sellOrderId;
     private Integer buyOrderId;
 
     @NotNull
-    private final Float price;
+    private final Double price;
 
     @NotNull
     private final Integer quantity;
