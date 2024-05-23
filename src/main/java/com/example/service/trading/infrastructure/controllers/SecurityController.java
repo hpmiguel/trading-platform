@@ -51,7 +51,7 @@ public class SecurityController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public Collection<SecurityDto> fetchAllSecuritys() {
+    public Collection<SecurityDto> fetchAllSecurities() {
         return findSecurityEndpointAdapter.fetchAllSecurities();
     }
 

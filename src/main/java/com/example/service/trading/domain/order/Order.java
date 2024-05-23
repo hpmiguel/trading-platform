@@ -19,7 +19,7 @@ public class Order implements Serializable {
     private final OrderType type;
 
     @NotNull
-    private final Float price;
+    private final Double price;
 
     @NotNull
     private final Integer quantity;
