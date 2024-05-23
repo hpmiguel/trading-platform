@@ -2,6 +2,7 @@ package com.example.service.trading.simplearchitecture.services.mappers;
 
 import com.example.service.trading.domain.order.Order;
 import com.example.service.trading.infrastructure.annotations.Mapper;
+import com.example.service.trading.simplearchitecture.services.models.OrderDto;
 
 @Mapper
 public class OrderDtoMapper {

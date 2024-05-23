@@ -14,6 +14,8 @@ public class OrderJpaMapper {
     public OrderData toJpaEntity(Order order) {
         return OrderData.builder()
                 .id(order.getId())
+                .userId(order.getUserId())
+                .securityId(order.getSecurityId())
                 .type(order.getType())
                 .fulfilled(order.getFulfilled())
                 .price(order.getPrice())

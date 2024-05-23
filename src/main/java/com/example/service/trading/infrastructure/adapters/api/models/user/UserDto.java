@@ -1,14 +1,15 @@
 package com.example.service.trading.infrastructure.adapters.api.models.user;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 @Getter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserDto {
 
-    private final String username;
+    private String username;
 
-    private final String password;
+    private String password;
 
 }
